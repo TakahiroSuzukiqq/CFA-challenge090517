@@ -2,6 +2,22 @@ var express = require('express');//#1
 var app = express();   //#1app has the all the methods of express able to be access
 // console.log("Hello world") //#1for testing var app
 
+//#9
+var dataFile = require('./data.json')
+
+// //#10 Test #The way of access to Beverages you drink in a week
+// console.log(dataFile.cfa.topic);
+//
+// //#12 Test #change 10, change data.js to data.json
+// console.log(dataFile.cfa.topic);
+
+
+
+// #11 Another way of defferent things and give them a name
+// console.log(dataFile.SayHello());
+
+//#13 activate commented out codes
+//#9.5 comment 5.5 to 3 out and
 //#5.5view engine setup
 app.set('view engine', 'ejs');
 
@@ -14,19 +30,11 @@ app.set('view engine', 'ejs');
 
 //#6 home routes #after creating views folder and home.ejs
 app.get('/', function(req, res){
- res.render('../views/home', {
-   title: "Star Wars Movies",
-   movies : ["The First Movie", "The second Movie", "The third Movie"] //#getting the arrays form the later json file
- });
+ res.render('../views/home', {DataVariable: data});
 });
 
-//movie_single //#4
-app.get('/star_wars_episode/:episode_number?', function(req, res){
- var episode_number = req.params.episode_number;      //#store own var called epidsode_number #to get the epidose number
-     res.send("This is the page for episode " + episode_number);
-});
 
-//not found //#5
+//not found //#5  #deleted 4
 app.get('*', function(req, res){   //# "*" represents any route
  res.send("This is not the page that you are looking for")
 });

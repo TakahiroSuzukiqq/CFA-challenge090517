@@ -1,0 +1,37 @@
+
+{
+  "cfa": {
+    "topic": "Beverages you drink in a week"
+  },
+
+  "beverages":[
+  {
+     "id": 1,
+     "stuff": "Water",
+     "recovery from exhaustion": 1
+  },
+
+    {
+     "id": 2,
+     "stuff": "Coca Cola",
+     "recovery from exhaustion": 3
+  },
+
+  {
+   "id": 3,
+   "stuff": "Enegy drink",
+   "recovery from exhaustion": 7
+  },
+
+  {
+   "id": 4,
+   "stuff": "Coffee",
+   "recovery from exhaustion": 5
+  },
+
+  {
+   "id": 5,
+   "stuff": "Beer",
+   "recovery from exhaustion": 100}
+ ]
+}

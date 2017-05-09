@@ -1,10 +1,9 @@
-<h1>This is the template of the home page</h1>
+<h1>Beverages we drink in the class</h1>
 
-<p><%= title %></p>
 
-<!-- #7display the arrays defined in #6 -->
+<!-- #7display the arrays defined in #6, #Reference: google EJS-->
 <ul>
-  <% for (var i = 0; i < movies.length; i++) { %>
-  <li><%= movies[i] %></li>
+  <% for(var i = 0; i < DataVariable.items.length; i++) {%>
+  <li><%= DataVariable.items[i].stuff %></li>
   <% } %>
 </ul>
